@@ -22,6 +22,7 @@ const ProductsPageProvider: FC<HomePageProps> = ({
       console.log("Error fetching products: ", error);
       setError(true);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setLoading(false);
   };
 

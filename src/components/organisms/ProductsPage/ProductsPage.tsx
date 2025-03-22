@@ -17,19 +17,19 @@ const ProductsPage: FC<ProductsPageProps> = ({
 }) => {
   return (
     <Layout>
-      <h1>Products</h1>
+      <h1 className="text-3xl font-semibold text-center my-6">Products</h1>
       {loading && <Loading />}
       {error ? (
         <Error />
       ) : (
-        <>
+        <div className="mb-8">
           <ProductsList products={products} />
           <ResponsivePaginationComponent
             current={currentPage}
             total={totalPages}
             onPageChange={(page) => fetchData(page)}
           />
-        </>
+        </div>
       )}
     </Layout>
   );

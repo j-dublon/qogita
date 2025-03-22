@@ -14,7 +14,7 @@ const HomePage: FC<HomePageProps> = ({ initialProducts, totalPages }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { count, results } = await fetchAllProducts(1);
+  const { count, results } = await fetchAllProducts(1, true);
   const totalPages = Math.ceil(count / 20);
 
   return {
