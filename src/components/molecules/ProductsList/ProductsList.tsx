@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { ProductsListProps } from "@/types";
 import ProductCard from "../ProductCard/ProductCard";
 

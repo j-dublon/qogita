@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import Layout from "../../Layout";
 import { ProductsPageProps } from "@/types";
 import ResponsivePaginationComponent from "react-responsive-pagination";

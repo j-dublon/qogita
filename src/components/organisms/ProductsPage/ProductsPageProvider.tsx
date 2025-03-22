@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import React, { FC, useState } from "react";
 import { fetchAllProducts } from "@/services/products";
 import { HomePageProps, Product } from "@/types";
 import ProductsPage from "./ProductsPage";

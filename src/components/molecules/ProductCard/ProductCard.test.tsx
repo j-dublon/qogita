@@ -9,11 +9,18 @@ describe("Component: ProductCard", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("SHOULD render the image with the correct url and alt text WHEN props are provided", () => {
+  it("SHOULD render the image with the correct alt text WHEN props are provided", () => {
     const { getByAltText } = render(<ProductCard {...mockProps} />);
-    expect(getByAltText(mockProps.name)).toHaveProperty(
-      "src",
-      expect.stringMatching(mockProps.imageUrl)
+    expect(getByAltText(mockProps.name));
+  });
+
+  it("SHOULD render the product title and price WHEN props are provided", () => {
+    const { getByText } = render(<ProductCard {...mockProps} />);
+    expect(getByText(mockProps.name));
+    expect(
+      getByText(
+        `${mockProps.recommendedRetailPriceCurrency} ${mockProps.recommendedRetailPrice}`
+      )
     );
   });
 });

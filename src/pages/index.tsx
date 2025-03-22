@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { GetStaticProps } from "next";
 import { fetchAllProducts } from "@/services/products";
 import { ProductsPageProvider } from "@/components";
