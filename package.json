@@ -21,15 +21,18 @@
   },
   "homepage": "https://github.com/qogita/frontend-challenge#readme",
   "dependencies": {
-    "next": "^11.1.2",
+    "next": "^12.2.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-responsive-pagination": "^2.10.3"
   },
   "devDependencies": {
-    "@types/react": "^17.0.24",
+    "@types/node": "22.13.11",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
     "tailwindcss": "^2.2.16",
-    "typescript": "^4.4.3"
+    "typescript": "^4.5.0"
   }
 }
