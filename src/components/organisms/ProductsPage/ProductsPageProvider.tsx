@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
-import { fetchAllProducts } from "../../../services/products";
-import { HomePageProps, Product } from "../../../types";
+import { fetchAllProducts } from "@/services/products";
+import { HomePageProps, Product } from "@/types";
 import ProductsPage from "./ProductsPage";
 
 const ProductsPageProvider: FC<HomePageProps> = ({

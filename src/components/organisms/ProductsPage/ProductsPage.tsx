@@ -1,11 +1,10 @@
 import { FC } from "react";
 import Layout from "../../Layout";
-import { ProductsPageProps } from "../../../types";
+import { ProductsPageProps } from "@/types";
 import ResponsivePaginationComponent from "react-responsive-pagination";
 import "react-responsive-pagination/themes/classic.css";
-import Loading from "../../atoms/Loading/Loading";
-import Error from "../../atoms/Error/Error";
-import ProductsList from "../../molecules/ProductsList/ProductsList";
+import { Loading, Error } from "../../atoms";
+import { ProductsList } from "../../molecules";
 
 const ProductsPage: FC<ProductsPageProps> = ({
   loading,

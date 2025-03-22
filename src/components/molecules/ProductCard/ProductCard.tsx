@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Product } from "../../../types";
+import { Product } from "@/types";
 import Image from "next/image";
 
 const ProductCard: FC<Product> = ({

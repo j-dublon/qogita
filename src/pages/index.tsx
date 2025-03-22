@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { GetStaticProps } from "next";
-import { fetchAllProducts } from "../services/products";
-import ProductsPageProvider from "../components/organisms/ProductsPage/ProductsPageProvider";
-import { HomePageProps } from "../types";
+import { fetchAllProducts } from "@/services/products";
+import { ProductsPageProvider } from "@/components";
+import { HomePageProps } from "@/types";
 
 const HomePage: FC<HomePageProps> = ({ initialProducts, totalPages }) => {
   return (

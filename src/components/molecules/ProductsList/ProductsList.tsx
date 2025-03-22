@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ProductsListProps } from "../../../types";
+import { ProductsListProps } from "@/types";
 import ProductCard from "../ProductCard/ProductCard";
 
 const ProductsList: FC<ProductsListProps> = ({ products }) => (
