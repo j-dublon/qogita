@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
-import { fetchAllProducts } from "@/services/products";
+import { fetchAllProducts } from "../../../services/products";
 import { HomePageProps, Product } from "@/types";
-import ProductsPage from "./ProductsPage";
+import AllProductsPage from "./AllProductsPage";
 
-const ProductsPageProvider: FC<HomePageProps> = ({
+const AllProductsPageProvider: FC<HomePageProps> = ({
   initialProducts,
   totalPages,
 }) => {
@@ -27,7 +27,7 @@ const ProductsPageProvider: FC<HomePageProps> = ({
   };
 
   return (
-    <ProductsPage
+    <AllProductsPage
       loading={loading}
       error={error}
       products={products}
@@ -38,4 +38,4 @@ const ProductsPageProvider: FC<HomePageProps> = ({
   );
 };
 
-export default ProductsPageProvider;
+export default AllProductsPageProvider;

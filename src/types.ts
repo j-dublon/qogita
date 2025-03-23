@@ -38,7 +38,7 @@ export type HomePageProps = {
 /**
  * Products Page props type
  */
-export type ProductsPageProps = {
+export type AllProductsPageProps = {
   loading: boolean;
   error: boolean;
   products: Product[];
