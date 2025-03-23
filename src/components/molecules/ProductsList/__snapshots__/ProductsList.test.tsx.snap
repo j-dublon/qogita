@@ -7,6 +7,7 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
     <div>
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
+        role="list"
       >
         <div>
           Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml
@@ -32,6 +33,7 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
   "container": <div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
+      role="list"
     >
       <div>
         Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml

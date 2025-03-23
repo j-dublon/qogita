@@ -5,13 +5,17 @@ exports[`Component: Loading SHOULD match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <p>
+      <p
+        role="status"
+      >
         Loading...
       </p>
     </div>
   </body>,
   "container": <div>
-    <p>
+    <p
+      role="status"
+    >
       Loading...
     </p>
   </div>,

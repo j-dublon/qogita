@@ -5,8 +5,10 @@ exports[`Component: ProductCard SHOULD match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="bg-white p-4 rounded-lg shadow-lg mb-4"
+      <button
+        aria-label="Go to product Mock Product"
+        class="bg-white p-4 rounded-lg shadow-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        style="cursor: pointer;"
       >
         <div
           class="flex justify-center mb-4"
@@ -25,7 +27,7 @@ exports[`Component: ProductCard SHOULD match snapshot 1`] = `
               />
             </span>
             <img
-              alt="Mock Product"
+              alt="Image of Mock Product"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -42,12 +44,14 @@ exports[`Component: ProductCard SHOULD match snapshot 1`] = `
         <p>
           GBP 52
         </p>
-      </div>
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="bg-white p-4 rounded-lg shadow-lg mb-4"
+    <button
+      aria-label="Go to product Mock Product"
+      class="bg-white p-4 rounded-lg shadow-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      style="cursor: pointer;"
     >
       <div
         class="flex justify-center mb-4"
@@ -66,7 +70,7 @@ exports[`Component: ProductCard SHOULD match snapshot 1`] = `
             />
           </span>
           <img
-            alt="Mock Product"
+            alt="Image of Mock Product"
             data-nimg="intrinsic"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -83,7 +87,7 @@ exports[`Component: ProductCard SHOULD match snapshot 1`] = `
       <p>
         GBP 52
       </p>
-    </div>
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
