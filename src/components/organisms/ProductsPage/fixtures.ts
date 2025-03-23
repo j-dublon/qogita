@@ -33,13 +33,15 @@ const mockProducts: Product[] = [
   },
 ];
 
+export const mockFetchAllProducts = jest.fn();
+
 export const mockProps: ProductsPageProps = {
   loading: false,
   error: false,
   products: mockProducts,
   currentPage: 1,
   totalPages: 5,
-  fetchData: jest.fn(),
+  fetchData: mockFetchAllProducts,
 };
 
 export const mockPropsLoading: ProductsPageProps = {
