@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "prestart": "npm run build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,15 +22,29 @@
   },
   "homepage": "https://github.com/qogita/frontend-challenge#readme",
   "dependencies": {
-    "next": "^11.1.2",
+    "next": "^12.2.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-responsive-pagination": "^2.10.3"
   },
   "devDependencies": {
-    "@types/react": "^17.0.24",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^12.1.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.13.11",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.3.6",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.3.8",
     "tailwindcss": "^2.2.16",
-    "typescript": "^4.4.3"
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
   }
 }

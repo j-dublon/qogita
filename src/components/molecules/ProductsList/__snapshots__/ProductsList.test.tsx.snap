@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ProductsList SHOULD match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
+      >
+        <div>
+          Parodontax Duplo Herbal Fresh 75ml
+        </div>
+        <div>
+          Poseidon The Black Men Edt Vapo 150 Ml - Beauty & Health
+        </div>
+        <div>
+          Snowracer Classic - Sled - Black
+        </div>
+        <div>
+          Carolina Herrera 212 Sexy M - 50ml - Eau De Toilette
+        </div>
+        <div>
+          Armaf Club De Nuit For Men Eau De Toilette Spray 105 Ml
+        </div>
+        <div>
+          Lancôme La Vie Est Belle 50ml Edp + Body Lotion + Showergel Set
+        </div>
+        <div>
+          Clinique Superdefense Broad Spectrum Spf 25 Multi-correcting Cream Day Cream 30 Ml
+        </div>
+        <div>
+          L’Oréal Paris Triple Active Day Cream - 50 Ml - Normal To Combination Skin
+        </div>
+        <div>
+          Alyssa Ashley Biolab Ginger & Curcuma Shower Gel 300 Ml
+        </div>
+        <div>
+          Liquid Foundation Youthfx Fill Revlon Spf 20
+        </div>
+        <div>
+          Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml
+        </div>
+        <div>
+          Indasec Instituto Español Argan Amphora Oil 400ml
+        </div>
+        <div>
+          Schwarzkopf 3d Mension Molding Wax - 100 Ml - Wax
+        </div>
+        <div>
+          Veet Cold Wax Strips Armpits
+        </div>
+        <div>
+          Philip B - Katira Hair Masque 178 Ml
+        </div>
+        <div>
+          Electrolux Ekf7900 Counter Top Filter Coffee Maker 1.65 L Fully Automatic
+        </div>
+        <div>
+          Friday The 13th: The Game - Ultimate Slasher Edition - Switch
+        </div>
+        <div>
+          Protecton Rim Brush Basic
+        </div>
+        <div>
+          Sid Meier's Civilization® Vi - Xbox One
+        </div>
+        <div>
+          Zendium Tp 75 Ml Gums Protect
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
+    >
+      <div>
+        Parodontax Duplo Herbal Fresh 75ml
+      </div>
+      <div>
+        Poseidon The Black Men Edt Vapo 150 Ml - Beauty & Health
+      </div>
+      <div>
+        Snowracer Classic - Sled - Black
+      </div>
+      <div>
+        Carolina Herrera 212 Sexy M - 50ml - Eau De Toilette
+      </div>
+      <div>
+        Armaf Club De Nuit For Men Eau De Toilette Spray 105 Ml
+      </div>
+      <div>
+        Lancôme La Vie Est Belle 50ml Edp + Body Lotion + Showergel Set
+      </div>
+      <div>
+        Clinique Superdefense Broad Spectrum Spf 25 Multi-correcting Cream Day Cream 30 Ml
+      </div>
+      <div>
+        L’Oréal Paris Triple Active Day Cream - 50 Ml - Normal To Combination Skin
+      </div>
+      <div>
+        Alyssa Ashley Biolab Ginger & Curcuma Shower Gel 300 Ml
+      </div>
+      <div>
+        Liquid Foundation Youthfx Fill Revlon Spf 20
+      </div>
+      <div>
+        Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml
+      </div>
+      <div>
+        Indasec Instituto Español Argan Amphora Oil 400ml
+      </div>
+      <div>
+        Schwarzkopf 3d Mension Molding Wax - 100 Ml - Wax
+      </div>
+      <div>
+        Veet Cold Wax Strips Armpits
+      </div>
+      <div>
+        Philip B - Katira Hair Masque 178 Ml
+      </div>
+      <div>
+        Electrolux Ekf7900 Counter Top Filter Coffee Maker 1.65 L Fully Automatic
+      </div>
+      <div>
+        Friday The 13th: The Game - Ultimate Slasher Edition - Switch
+      </div>
+      <div>
+        Protecton Rim Brush Basic
+      </div>
+      <div>
+        Sid Meier's Civilization® Vi - Xbox One
+      </div>
+      <div>
+        Zendium Tp 75 Ml Gums Protect
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

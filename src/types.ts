@@ -26,3 +26,30 @@ export type ProductsResponse = {
  * The response type of /api/products/[gtin].
  */
 export type ProductResponse = Product;
+
+/**
+ * Home Page props type
+ */
+export type HomePageProps = {
+  initialProducts: Product[];
+  totalPages: number;
+};
+
+/**
+ * Products Page props type
+ */
+export type ProductsPageProps = {
+  loading: boolean;
+  error: boolean;
+  products: Product[];
+  currentPage: number;
+  totalPages: number;
+  fetchData: (page: number) => void;
+};
+
+/**
+ * ProductsList component props type
+ */
+export type ProductsListProps = {
+  products: Product[];
+};
