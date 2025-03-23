@@ -6,7 +6,7 @@ exports[`Component: CartQuantityButtons SHOULD match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-row gap-6 text-xl mb-6 justify-self-center"
+        class="flex flex-row gap-6 text-xl justify-self-center"
       >
         <button
           class="text-2xl hover:text-blue-500"
@@ -26,7 +26,7 @@ exports[`Component: CartQuantityButtons SHOULD match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-row gap-6 text-xl mb-6 justify-self-center"
+      class="flex flex-row gap-6 text-xl justify-self-center"
     >
       <button
         class="text-2xl hover:text-blue-500"
