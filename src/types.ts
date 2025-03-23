@@ -36,7 +36,7 @@ export type HomePageProps = {
 };
 
 /**
- * Products Page props type
+ * All Products Page props type
  */
 export type AllProductsPageProps = {
   loading: boolean;
@@ -52,4 +52,11 @@ export type AllProductsPageProps = {
  */
 export type ProductsListProps = {
   products: Product[];
+};
+
+/**
+ * Product Page props type
+ */
+export type ProductPageProps = {
+  product: Product;
 };
