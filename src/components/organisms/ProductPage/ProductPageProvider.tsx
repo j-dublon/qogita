@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { Product, ProductPageProviderProps } from "@/types";
+import { ProductPageProviderProps } from "@/types";
 import ProductPage from "./ProductPage";
 import { Item, useCart } from "react-use-cart";
 
@@ -12,15 +12,15 @@ const ProductPageProvider: FC<ProductPageProviderProps> = ({ product }) => {
     setCurrentItem(currentItem);
   }, [items]);
 
-  const updateCart = (product: Product, newQuantity: number) => {
-    const item = {
-      ...product,
-      id: product.gtin,
-      price: product.recommendedRetailPrice,
-    };
+  const updateCart = (newQuantity: number) => {
     if (currentItem?.quantity) {
-      updateItemQuantity(item.id, newQuantity);
+      updateItemQuantity(product.gtin, newQuantity);
     } else {
+      const item = {
+        ...product,
+        id: product.gtin,
+        price: product.recommendedRetailPrice,
+      };
       addItem(item, newQuantity);
     }
   };

@@ -19,7 +19,6 @@ describe("Component: CartQuantityButtons", () => {
 
     fireEvent.click(getByText("-"));
     expect(mockUpdateCartQuantity).toHaveBeenCalledWith(
-      mockProps.product,
       mockProps.numberInCart - 1
     );
   });
@@ -29,7 +28,6 @@ describe("Component: CartQuantityButtons", () => {
 
     fireEvent.click(getByText("+"));
     expect(mockUpdateCartQuantity).toHaveBeenCalledWith(
-      mockProps.product,
       mockProps.numberInCart + 1
     );
   });

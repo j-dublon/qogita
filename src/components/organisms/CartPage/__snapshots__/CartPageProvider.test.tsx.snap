@@ -1,46 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: CartQuantityButtons SHOULD match snapshot 1`] = `
+exports[`Component: CartPageProvider SHOULD match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="flex flex-row gap-6 text-xl justify-self-center"
-      >
-        <button
-          class="text-2xl hover:text-blue-500"
-        >
-          -
-        </button>
-        <p>
-          3
-        </p>
-        <button
-          class="text-2xl hover:text-blue-500"
-        >
-          +
-        </button>
+      <div>
+        Cart Page
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="flex flex-row gap-6 text-xl justify-self-center"
-    >
-      <button
-        class="text-2xl hover:text-blue-500"
-      >
-        -
-      </button>
-      <p>
-        3
-      </p>
-      <button
-        class="text-2xl hover:text-blue-500"
-      >
-        +
-      </button>
+    <div>
+      Cart Page
     </div>
   </div>,
   "debug": [Function],
