@@ -26,13 +26,16 @@ exports[`Component: AllProductsPage SHOULD match snapshot 1`] = `
                   Products
                 </a>
               </li>
-              <li>
+              <li
+                class="flex flex-row"
+              >
                 <a
-                  class="underline"
+                  class="underline mr-1"
                   href="/cart"
                 >
                   Your Cart
                 </a>
+                <p />
               </li>
             </ul>
           </nav>
@@ -77,13 +80,16 @@ exports[`Component: AllProductsPage SHOULD match snapshot 1`] = `
                 Products
               </a>
             </li>
-            <li>
+            <li
+              class="flex flex-row"
+            >
               <a
-                class="underline"
+                class="underline mr-1"
                 href="/cart"
               >
                 Your Cart
               </a>
+              <p />
             </li>
           </ul>
         </nav>
