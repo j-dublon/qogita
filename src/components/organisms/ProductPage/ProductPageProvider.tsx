@@ -1,34 +1,36 @@
-import React, { FC, useState } from "react";
-import { ProductPageProps } from "@/types";
+import React, { FC, useEffect, useState } from "react";
+import { Product, ProductPageProps } from "@/types";
 import ProductPage from "./ProductPage";
-import { useCart } from "react-use-cart";
+import { Item, useCart } from "react-use-cart";
 
 const ProductPageProvider: FC<ProductPageProps> = ({ product }) => {
-  const { items, updateItemQuantity, addItem } = useCart();
-  const currentItem = items.find((item) => item.id === product.gtin);
-  const [numberOfCurrentItem, setNumberOfCurrentItem] = useState(
-    currentItem?.quantity ?? 0
-  );
+  const { items, updateItemQuantity, addItem, emptyCart } = useCart();
+  const [currentItem, setCurrentItem] = useState<Item>();
+  console.log(items, "<---ITEMS");
 
-  const updateCart = () => {
+  useEffect(() => {
+    const currentItem = items.find((item) => item.id === product.gtin);
+    setCurrentItem(currentItem);
+  }, [items]);
+
+  const updateCart = (product: Product, newQuantity: number) => {
     const item = {
       ...product,
       id: product.gtin,
       price: product.recommendedRetailPrice,
     };
-    if (currentItem?.quantity && currentItem.quantity > 0) {
-      updateItemQuantity(item.id, numberOfCurrentItem);
+    if (currentItem?.quantity) {
+      updateItemQuantity(item.id, newQuantity);
     } else {
-      addItem(item, numberOfCurrentItem);
+      addItem(item, newQuantity);
     }
   };
 
   return (
     <ProductPage
       product={product}
-      numberInCart={numberOfCurrentItem}
-      setNumberInCart={setNumberOfCurrentItem}
-      updateCart={updateCart}
+      numberInCart={currentItem?.quantity ?? 0}
+      updateCartQuantity={updateCart}
     />
   );
 };

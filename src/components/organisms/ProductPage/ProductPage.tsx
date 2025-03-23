@@ -6,8 +6,7 @@ import Image from "next/image";
 const ProductPage: FC<ProductPageProps> = ({
   product,
   numberInCart,
-  setNumberInCart,
-  updateCart,
+  updateCartQuantity,
 }) => {
   const {
     name,
@@ -26,25 +25,19 @@ const ProductPage: FC<ProductPageProps> = ({
       <div className="flex flex-row gap-6 text-xl mb-6 justify-self-center">
         <button
           disabled={numberInCart === 0}
-          onClick={() => setNumberInCart((prev) => prev - 1)}
+          onClick={() => updateCartQuantity(product, numberInCart - 1)}
           className="text-2xl hover:text-blue-500"
         >
           -
         </button>
         <p>{numberInCart}</p>
         <button
-          onClick={() => setNumberInCart((prev) => prev + 1)}
+          onClick={() => updateCartQuantity(product, numberInCart + 1)}
           className="text-2xl hover:text-blue-500"
         >
           +
         </button>
       </div>
-      <button
-        className="text-xl hover:text-blue-500 flex justify-self-center"
-        onClick={updateCart}
-      >
-        Update Cart
-      </button>
     </Layout>
   );
 };

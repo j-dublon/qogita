@@ -67,6 +67,5 @@ export type ProductPageProviderProps = {
 export type ProductPageProps = {
   product: Product;
   numberInCart: number;
-  setNumberInCart: React.Dispatch<React.SetStateAction<number>>;
-  updateCart: () => void;
+  updateCartQuantity: (product: Product, newQuantity: number) => void;
 };
