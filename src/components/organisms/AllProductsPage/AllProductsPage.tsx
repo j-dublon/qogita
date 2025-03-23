@@ -27,6 +27,7 @@ const AllProductsPage: FC<AllProductsPageProps> = ({
             current={currentPage}
             total={totalPages}
             onPageChange={(page) => fetchData(page)}
+            aria-label="Pagination controls for all products page"
           />
         </div>
       )}
