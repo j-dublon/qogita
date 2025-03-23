@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState } from "react";
-import { Product, ProductPageProps } from "@/types";
+import { Product, ProductPageProviderProps } from "@/types";
 import ProductPage from "./ProductPage";
 import { Item, useCart } from "react-use-cart";
 
-const ProductPageProvider: FC<ProductPageProps> = ({ product }) => {
+const ProductPageProvider: FC<ProductPageProviderProps> = ({ product }) => {
   const { items, updateItemQuantity, addItem } = useCart();
   const [currentItem, setCurrentItem] = useState<Item>();
 
