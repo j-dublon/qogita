@@ -42,6 +42,7 @@ export type Product = {
 export interface ProductItem extends Product {
   id: string;
   quantity: number;
+  price: number;
 }
 
 // -----PAGE/COMPONENT PROPS TYPES-----

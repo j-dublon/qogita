@@ -6,7 +6,6 @@ export const MockUpdateCartQuantityButtons: FC = () => (
 );
 
 export const MockProductPage: FC<ProductPageProps> = ({
-  product,
   numberInCart,
   updateCartQuantity,
 }) => (
