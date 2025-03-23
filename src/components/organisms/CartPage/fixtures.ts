@@ -1,5 +1,7 @@
 import { CartPageProps } from "@/types";
 
+export const mockUpdateItemQuantity = jest.fn();
+
 export const mockProps: CartPageProps = {
   items: [
     {
