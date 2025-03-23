@@ -55,8 +55,18 @@ export type ProductsListProps = {
 };
 
 /**
+ * Product Page Provider props type
+ */
+export type ProductPageProviderProps = {
+  product: Product;
+};
+
+/**
  * Product Page props type
  */
 export type ProductPageProps = {
   product: Product;
+  numberInCart: number;
+  setNumberInCart: React.Dispatch<React.SetStateAction<number>>;
+  updateCart: () => void;
 };
