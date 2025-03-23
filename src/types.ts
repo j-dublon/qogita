@@ -36,7 +36,7 @@ export type HomePageProps = {
 };
 
 /**
- * Products Page props type
+ * All Products Page props type
  */
 export type AllProductsPageProps = {
   loading: boolean;
@@ -52,4 +52,36 @@ export type AllProductsPageProps = {
  */
 export type ProductsListProps = {
   products: Product[];
+};
+
+/**
+ * Product Page Provider props type
+ */
+export type ProductPageProviderProps = {
+  product: Product;
+};
+
+/**
+ * Product Page props type
+ */
+export type ProductPageProps = {
+  product: Product;
+  numberInCart: number;
+  updateCartQuantity: (product: Product, newQuantity: number) => void;
+};
+
+/**
+ * Layout component props type
+ */
+export type LayoutProps = {
+  children: React.ReactNode;
+};
+
+/**
+ * Cart Quantity Buttons component props type
+ */
+export type CartQuantityButtonsProps = {
+  product: Product;
+  numberInCart: number;
+  updateCartQuantity: (product: Product, newQuantity: number) => void;
 };

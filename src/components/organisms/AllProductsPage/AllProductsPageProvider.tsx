@@ -15,9 +15,11 @@ const AllProductsPageProvider: FC<HomePageProps> = ({
   const fetchData = async (page: number) => {
     setLoading(true);
     try {
-      const { results } = await fetchAllProducts(page);
-      setProducts(results);
-      setCurrentPage(page);
+      const allProducts = await fetchAllProducts(page);
+      if (allProducts) {
+        setProducts(allProducts.results);
+        setCurrentPage(page);
+      }
     } catch (error) {
       console.log("Error fetching products: ", error);
       setError(true);

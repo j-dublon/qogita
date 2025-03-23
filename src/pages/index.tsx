@@ -14,12 +14,21 @@ const HomePage: FC<HomePageProps> = ({ initialProducts, totalPages }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { count, results } = await fetchAllProducts(1, true);
-  const totalPages = Math.ceil(count / 20);
+  const allProducts = await fetchAllProducts(1, true);
+  if (!allProducts) {
+    return {
+      redirect: {
+        destination: "/error",
+        permanent: false,
+      },
+    };
+  }
+
+  const totalPages = Math.ceil(allProducts.count / 20);
 
   return {
     props: {
-      initialProducts: results,
+      initialProducts: allProducts.results,
       totalPages,
     },
     revalidate: 60,
