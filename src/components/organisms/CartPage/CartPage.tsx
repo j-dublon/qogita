@@ -14,6 +14,7 @@ const CartPage: FC<CartPageProps> = ({
       <CartPageItem
         item={item as ProductItem}
         handleUpdateCart={handleUpdateCart}
+        key={item.id}
       />
     ))}
     <h1 className="text-3xl font-semibold text-center my-6">{`CART TOTAL: EUR ${cartTotal}`}</h1>

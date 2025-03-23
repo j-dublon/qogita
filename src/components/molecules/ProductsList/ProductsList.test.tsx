@@ -16,11 +16,8 @@ describe("Component: ProductsList", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it.each(mockProps.products)(
-    `SHOULD render a ProductCard component for each product WHEN props are provided`,
-    (product) => {
-      const { getByText } = render(<ProductsList {...mockProps} />);
-      expect(getByText(product.name));
-    }
-  );
+  it("SHOULD render a ProductCard component for each product WHEN props are provided", () => {
+    const { getByText } = render(<ProductsList {...mockProps} />);
+    mockProps.products.forEach((product) => expect(getByText(product.name)));
+  });
 });
