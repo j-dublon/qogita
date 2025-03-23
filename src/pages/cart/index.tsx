@@ -1,10 +1,6 @@
 import React from "react";
-import Layout from "../../components/Layout";
+import { CartPageProvider } from "@/components";
 
-const CartPage = () => (
-  <Layout>
-    <h1>Your Cart</h1>
-  </Layout>
-);
+const CartPage = () => <CartPageProvider />;
 
 export default CartPage;

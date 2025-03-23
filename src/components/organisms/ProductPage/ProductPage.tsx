@@ -29,7 +29,6 @@ const ProductPage: FC<ProductPageProps> = ({
       </div>
       <p className="text-lg font-semibold text-center mb-8">{`${recommendedRetailPriceCurrency} ${recommendedRetailPrice}`}</p>
       <CartQuantityButtons
-        product={product}
         numberInCart={numberInCart}
         updateCartQuantity={updateCartQuantity}
       />

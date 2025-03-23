@@ -2,21 +2,20 @@ import React, { FC } from "react";
 import { CartQuantityButtonsProps } from "@/types";
 
 const CartQuantityButtons: FC<CartQuantityButtonsProps> = ({
-  product,
   numberInCart,
   updateCartQuantity,
 }) => (
-  <div className="flex flex-row gap-6 text-xl mb-6 justify-self-center">
+  <div className="flex flex-row gap-6 text-xl justify-self-center">
     <button
       disabled={numberInCart === 0}
-      onClick={() => updateCartQuantity(product, numberInCart - 1)}
+      onClick={() => updateCartQuantity(numberInCart - 1)}
       className="text-2xl hover:text-blue-500"
     >
       -
     </button>
     <p>{numberInCart}</p>
     <button
-      onClick={() => updateCartQuantity(product, numberInCart + 1)}
+      onClick={() => updateCartQuantity(numberInCart + 1)}
       className="text-2xl hover:text-blue-500"
     >
       +

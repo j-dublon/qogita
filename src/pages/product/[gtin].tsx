@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { GetServerSideProps } from "next";
 import { fetchProductByGtin } from "../../services/products";
 import { ProductPageProviderProps } from "@/types";
-import ProductPageProvider from "@/components/organisms/ProductPage/ProductPageProvider";
+import { ProductPageProvider } from "@/components";
 
 const ProductPage: FC<ProductPageProviderProps> = ({ product }) => {
   return <ProductPageProvider product={product} />;
