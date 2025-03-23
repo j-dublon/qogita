@@ -69,3 +69,10 @@ export type ProductPageProps = {
   numberInCart: number;
   updateCartQuantity: (product: Product, newQuantity: number) => void;
 };
+
+/**
+ * Layout component props type
+ */
+export type LayoutProps = {
+  children: React.ReactNode;
+};
