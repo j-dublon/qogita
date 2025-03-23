@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import { GetServerSideProps } from "next";
 import { fetchProductByGtin } from "../../services/products";
-
 import { ProductPageProps } from "@/types";
+import ProductPageProvider from "@/components/organisms/ProductPage/ProductPageProvider";
 
 const ProductPage: FC<ProductPageProps> = ({ product }) => {
-  return <div>{product.name}</div>;
+  return <ProductPageProvider product={product} />;
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
