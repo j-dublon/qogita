@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Layout from "../../Layout";
 import { ProductPageProps } from "@/types";
 import Image from "next/image";
-import CartQuantityButtons from "@/components/molecules/CartQuantityButtons/CartQuantityButtons";
+import CartQuantityButtons from "../../molecules/CartQuantityButtons/CartQuantityButtons";
 
 const ProductPage: FC<ProductPageProps> = ({
   product,
@@ -20,7 +20,12 @@ const ProductPage: FC<ProductPageProps> = ({
     <Layout>
       <h1 className="text-3xl font-semibold text-center mt-6 mb-8">{name}</h1>
       <div className="flex justify-center mb-8">
-        <Image src={imageUrl} height={300} width={300} />
+        <Image
+          src={imageUrl}
+          height={300}
+          width={300}
+          alt={`Image of ${product.name}`}
+        />
       </div>
       <p className="text-lg font-semibold text-center mb-8">{`${recommendedRetailPriceCurrency} ${recommendedRetailPrice}`}</p>
       <CartQuantityButtons
