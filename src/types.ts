@@ -112,3 +112,11 @@ export type CartPageProps = {
   handleUpdateCart: (item: ProductItem, newQuantity: number) => void;
   cartTotal: number;
 };
+
+/**
+ * Cart Page Item props type
+ */
+export type CartPageItemProps = {
+  item: ProductItem;
+  handleUpdateCart: (item: ProductItem, newQuantity: number) => void;
+};
