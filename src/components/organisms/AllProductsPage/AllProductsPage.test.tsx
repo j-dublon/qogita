@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import ProductsPage from "./ProductsPage";
+import AllProductsPage from "./AllProductsPage";
 import { mockProps, mockPropsErrorState, mockPropsLoading } from "./fixtures";
 import {
   MockError,
@@ -27,26 +27,28 @@ jest.mock("react-responsive-pagination", () => ({
 }));
 jest.mock("react-responsive-pagination/themes/classic.css", () => {});
 
-describe("Component: ProductsPage", () => {
+describe("Component: AllProductsPage", () => {
   it("SHOULD match snapshot", () => {
-    const component = render(<ProductsPage {...mockProps} />);
+    const component = render(<AllProductsPage {...mockProps} />);
     expect(component).toMatchSnapshot();
   });
 
   it("SHOULD render title and components as expected WHEN page is not loading or in error state", () => {
-    const { getByText, getAllByText } = render(<ProductsPage {...mockProps} />);
+    const { getByText, getAllByText } = render(
+      <AllProductsPage {...mockProps} />
+    );
     expect(getAllByText("Products")).toHaveLength(2);
     expect(getByText("Products List"));
     expect(getByText("Pagination"));
   });
 
   it("SHOULD render loading component WHEN loading is true", () => {
-    const { getByText } = render(<ProductsPage {...mockPropsLoading} />);
+    const { getByText } = render(<AllProductsPage {...mockPropsLoading} />);
     expect(getByText("Loading..."));
   });
 
   it("SHOULD render error component WHEN error is true", () => {
-    const { getByText } = render(<ProductsPage {...mockPropsErrorState} />);
+    const { getByText } = render(<AllProductsPage {...mockPropsErrorState} />);
     expect(getByText("Error"));
   });
 });

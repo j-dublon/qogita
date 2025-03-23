@@ -1,13 +1,13 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
-import ProductsPage from "./ProductsPage";
-import { mockFetchAllProducts, mockProps } from "./fixtures";
+import AllProductsPageProvider from "./AllProductsPageProvider";
+import { mockFetchAllProducts, mockProps, mockProviderProps } from "./fixtures";
 import {
   MockError,
   MockLoading,
   MockPagination,
   MockProductsList,
-  MockProductsPage,
+  MockAllProductsPage,
 } from "./mock-components";
 
 jest.mock("../../atoms/Error/Error", () => ({
@@ -27,24 +27,30 @@ jest.mock("react-responsive-pagination", () => ({
   default: jest.fn(() => <MockPagination />),
 }));
 jest.mock("react-responsive-pagination/themes/classic.css", () => {});
-jest.mock("./ProductsPage", () => ({
+jest.mock("./AllProductsPage", () => ({
   __esModule: true,
-  default: () => <MockProductsPage {...mockProps} />,
+  default: () => <MockAllProductsPage {...mockProps} />,
 }));
 
-describe("Component: ProductsPage", () => {
+describe("Component: AllProductsPageProvider", () => {
   it("SHOULD match snapshot", () => {
-    const component = render(<ProductsPage {...mockProps} />);
+    const component = render(
+      <AllProductsPageProvider {...mockProviderProps} />
+    );
     expect(component).toMatchSnapshot();
   });
 
-  it("SHOULD render the ProductsPage component WHEN props are provided", () => {
-    const { getByText } = render(<ProductsPage {...mockProps} />);
+  it("SHOULD render the AllProductsPageProvider component WHEN props are provided", () => {
+    const { getByText } = render(
+      <AllProductsPageProvider {...mockProviderProps} />
+    );
     expect(getByText("Products Page"));
   });
 
-  it("SHOULD call fetchAllProducts WHEN fetchData is called by ProductsPage component", () => {
-    const { getByText } = render(<ProductsPage {...mockProps} />);
+  it("SHOULD call fetchAllProducts WHEN fetchData is called by AllProductsPageProvider component", () => {
+    const { getByText } = render(
+      <AllProductsPageProvider {...mockProviderProps} />
+    );
     expect(getByText("Products Page"));
 
     fireEvent.click(getByText("Products Page Pagination"));

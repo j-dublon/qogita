@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import Layout from "../../Layout";
-import { ProductsPageProps } from "@/types";
+import { AllProductsPageProps } from "@/types";
 import ResponsivePaginationComponent from "react-responsive-pagination";
 import "react-responsive-pagination/themes/classic.css";
 import { Loading, Error } from "../../atoms";
 import { ProductsList } from "../../molecules";
 
-const ProductsPage: FC<ProductsPageProps> = ({
+const AllProductsPage: FC<AllProductsPageProps> = ({
   loading,
   error,
   products,
@@ -34,4 +34,4 @@ const ProductsPage: FC<ProductsPageProps> = ({
   );
 };
 
-export default ProductsPage;
+export default AllProductsPage;

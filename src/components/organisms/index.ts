@@ -1,1 +1,1 @@
-export { default as ProductsPageProvider } from "./ProductsPage/ProductsPageProvider";
+export { default as AllProductsPageProvider } from "./AllProductsPage/AllProductsPageProvider";

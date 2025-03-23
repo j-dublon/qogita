@@ -9,36 +9,6 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
       >
         <div>
-          Parodontax Duplo Herbal Fresh 75ml
-        </div>
-        <div>
-          Poseidon The Black Men Edt Vapo 150 Ml - Beauty & Health
-        </div>
-        <div>
-          Snowracer Classic - Sled - Black
-        </div>
-        <div>
-          Carolina Herrera 212 Sexy M - 50ml - Eau De Toilette
-        </div>
-        <div>
-          Armaf Club De Nuit For Men Eau De Toilette Spray 105 Ml
-        </div>
-        <div>
-          Lancôme La Vie Est Belle 50ml Edp + Body Lotion + Showergel Set
-        </div>
-        <div>
-          Clinique Superdefense Broad Spectrum Spf 25 Multi-correcting Cream Day Cream 30 Ml
-        </div>
-        <div>
-          L’Oréal Paris Triple Active Day Cream - 50 Ml - Normal To Combination Skin
-        </div>
-        <div>
-          Alyssa Ashley Biolab Ginger & Curcuma Shower Gel 300 Ml
-        </div>
-        <div>
-          Liquid Foundation Youthfx Fill Revlon Spf 20
-        </div>
-        <div>
           Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml
         </div>
         <div>
@@ -56,18 +26,6 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
         <div>
           Electrolux Ekf7900 Counter Top Filter Coffee Maker 1.65 L Fully Automatic
         </div>
-        <div>
-          Friday The 13th: The Game - Ultimate Slasher Edition - Switch
-        </div>
-        <div>
-          Protecton Rim Brush Basic
-        </div>
-        <div>
-          Sid Meier's Civilization® Vi - Xbox One
-        </div>
-        <div>
-          Zendium Tp 75 Ml Gums Protect
-        </div>
       </div>
     </div>
   </body>,
@@ -75,36 +33,6 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
     >
-      <div>
-        Parodontax Duplo Herbal Fresh 75ml
-      </div>
-      <div>
-        Poseidon The Black Men Edt Vapo 150 Ml - Beauty & Health
-      </div>
-      <div>
-        Snowracer Classic - Sled - Black
-      </div>
-      <div>
-        Carolina Herrera 212 Sexy M - 50ml - Eau De Toilette
-      </div>
-      <div>
-        Armaf Club De Nuit For Men Eau De Toilette Spray 105 Ml
-      </div>
-      <div>
-        Lancôme La Vie Est Belle 50ml Edp + Body Lotion + Showergel Set
-      </div>
-      <div>
-        Clinique Superdefense Broad Spectrum Spf 25 Multi-correcting Cream Day Cream 30 Ml
-      </div>
-      <div>
-        L’Oréal Paris Triple Active Day Cream - 50 Ml - Normal To Combination Skin
-      </div>
-      <div>
-        Alyssa Ashley Biolab Ginger & Curcuma Shower Gel 300 Ml
-      </div>
-      <div>
-        Liquid Foundation Youthfx Fill Revlon Spf 20
-      </div>
       <div>
         Korres Endocare C Proteoglicanos Spf30 Ampoules 30x2ml
       </div>
@@ -122,18 +50,6 @@ exports[`Component: ProductsList SHOULD match snapshot 1`] = `
       </div>
       <div>
         Electrolux Ekf7900 Counter Top Filter Coffee Maker 1.65 L Fully Automatic
-      </div>
-      <div>
-        Friday The 13th: The Game - Ultimate Slasher Edition - Switch
-      </div>
-      <div>
-        Protecton Rim Brush Basic
-      </div>
-      <div>
-        Sid Meier's Civilization® Vi - Xbox One
-      </div>
-      <div>
-        Zendium Tp 75 Ml Gums Protect
       </div>
     </div>
   </div>,

@@ -1,4 +1,4 @@
-import { Product, ProductsPageProps } from "@/types";
+import { HomePageProps, Product, AllProductsPageProps } from "@/types";
 
 const mockProducts: Product[] = [
   {
@@ -35,7 +35,7 @@ const mockProducts: Product[] = [
 
 export const mockFetchAllProducts = jest.fn();
 
-export const mockProps: ProductsPageProps = {
+export const mockProps: AllProductsPageProps = {
   loading: false,
   error: false,
   products: mockProducts,
@@ -44,12 +44,17 @@ export const mockProps: ProductsPageProps = {
   fetchData: mockFetchAllProducts,
 };
 
-export const mockPropsLoading: ProductsPageProps = {
+export const mockPropsLoading: AllProductsPageProps = {
   ...mockProps,
   loading: true,
 };
 
-export const mockPropsErrorState: ProductsPageProps = {
+export const mockPropsErrorState: AllProductsPageProps = {
   ...mockProps,
   error: true,
+};
+
+export const mockProviderProps: HomePageProps = {
+  initialProducts: mockProducts,
+  totalPages: 3,
 };

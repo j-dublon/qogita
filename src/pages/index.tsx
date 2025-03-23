@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { GetStaticProps } from "next";
 import { fetchAllProducts } from "@/services/products";
-import { ProductsPageProvider } from "@/components";
+import { AllProductsPageProvider } from "@/components";
 import { HomePageProps } from "@/types";
 
 const HomePage: FC<HomePageProps> = ({ initialProducts, totalPages }) => {
   return (
-    <ProductsPageProvider
+    <AllProductsPageProvider
       initialProducts={initialProducts}
       totalPages={totalPages}
     />
