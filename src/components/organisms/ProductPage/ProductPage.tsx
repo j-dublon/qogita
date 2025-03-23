@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Layout from "../../Layout";
 import { ProductPageProps } from "@/types";
 import Image from "next/image";
+import CartQuantityButtons from "@/components/molecules/CartQuantityButtons/CartQuantityButtons";
 
 const ProductPage: FC<ProductPageProps> = ({
   product,
@@ -22,22 +23,11 @@ const ProductPage: FC<ProductPageProps> = ({
         <Image src={imageUrl} height={300} width={300} />
       </div>
       <p className="text-lg font-semibold text-center mb-8">{`${recommendedRetailPriceCurrency} ${recommendedRetailPrice}`}</p>
-      <div className="flex flex-row gap-6 text-xl mb-6 justify-self-center">
-        <button
-          disabled={numberInCart === 0}
-          onClick={() => updateCartQuantity(product, numberInCart - 1)}
-          className="text-2xl hover:text-blue-500"
-        >
-          -
-        </button>
-        <p>{numberInCart}</p>
-        <button
-          onClick={() => updateCartQuantity(product, numberInCart + 1)}
-          className="text-2xl hover:text-blue-500"
-        >
-          +
-        </button>
-      </div>
+      <CartQuantityButtons
+        product={product}
+        numberInCart={numberInCart}
+        updateCartQuantity={updateCartQuantity}
+      />
     </Layout>
   );
 };

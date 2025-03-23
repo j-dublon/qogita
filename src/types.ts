@@ -76,3 +76,12 @@ export type ProductPageProps = {
 export type LayoutProps = {
   children: React.ReactNode;
 };
+
+/**
+ * Cart Quantity Buttons component props type
+ */
+export type CartQuantityButtonsProps = {
+  product: Product;
+  numberInCart: number;
+  updateCartQuantity: (product: Product, newQuantity: number) => void;
+};
