@@ -16,7 +16,7 @@ describe("Helper: fetchAllProducts", () => {
 
   afterAll(() => (process.env = originalEnv));
 
-  it("SHOULD call the API route with correct params WHEN serverToFetch is true", async () => {
+  it("SHOULD call the API route with correct params WHEN serverFetch is true", async () => {
     fetch.once(JSON.stringify(mockProductsResponse), { status: 200 });
 
     const res = await fetchAllProducts(1, true);
@@ -30,7 +30,7 @@ describe("Helper: fetchAllProducts", () => {
     });
   });
 
-  it("SHOULD call the API route with correct params WHEN serverToFetch is false", async () => {
+  it("SHOULD call the API route with correct params WHEN serverFetch is false", async () => {
     fetch.once(JSON.stringify(mockProductsResponse), { status: 200 });
 
     await fetchAllProducts(3, false);
