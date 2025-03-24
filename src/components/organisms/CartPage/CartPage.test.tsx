@@ -19,7 +19,7 @@ describe("Component: CartPage", () => {
   it("SHOULD render page title and cart total as expected WHEN props are provided", () => {
     const { getByText, getAllByText } = render(<CartPage {...mockProps} />);
     expect(getAllByText("Your Cart")).toHaveLength(2);
-    expect(getByText(`CART TOTAL: EUR ${mockProps.cartTotal}`));
+    expect(getByText(`CART TOTAL: EUR ${mockProps.cartTotal.toFixed(2)}`));
   });
 
   it("SHOULD render a CartPageItem component for each item WHEN props are provided", () => {

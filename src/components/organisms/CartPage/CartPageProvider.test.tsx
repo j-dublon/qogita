@@ -33,7 +33,7 @@ describe("Component: CartPageProvider", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("SHOULD render cart page WHEN props are provided", async () => {
+  it("SHOULD render cart page", async () => {
     const { getByText } = render(
       <CartProvider>
         <CartPageProvider />

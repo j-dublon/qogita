@@ -4,12 +4,14 @@ import { useCart } from "react-use-cart";
 import { LayoutProps } from "@/types";
 
 const Layout: FC<LayoutProps> = ({ children }) => {
-  const { totalItems } = useCart();
+  const { totalItems, isEmpty } = useCart();
   const [cartItems, setCartItems] = useState<number>();
 
   useEffect(() => {
     if (totalItems) {
       setCartItems(totalItems);
+    } else if (isEmpty) {
+      setCartItems(0);
     }
   }, [totalItems]);
 
