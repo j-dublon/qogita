@@ -1,10 +1,17 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 import Link from "next/link";
 import { useCart } from "react-use-cart";
 import { LayoutProps } from "@/types";
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   const { totalItems } = useCart();
+  const [cartItems, setCartItems] = useState<number>();
+
+  useEffect(() => {
+    if (totalItems) {
+      setCartItems(totalItems);
+    }
+  }, [totalItems]);
 
   return (
     <div className="container mx-auto px-4">
@@ -21,7 +28,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
               <Link href="/cart">
                 <a className="underline mr-1">Your Cart</a>
               </Link>
-              <p>{totalItems > 0 ? `(${totalItems})` : ""}</p>
+              <p>{cartItems ? `(${cartItems})` : ""}</p>
             </li>
           </ul>
         </nav>
