@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Layout from "../../Layout";
 import { ProductPageProps } from "@/types";
 import Image from "next/image";
-import CartQuantityButtons from "../../molecules/CartQuantityButtons/CartQuantityButtons";
+import { CartQuantityButtons } from "../../molecules";
 
 const ProductPage: FC<ProductPageProps> = ({
   product,

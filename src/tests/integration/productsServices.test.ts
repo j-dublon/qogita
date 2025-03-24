@@ -5,7 +5,7 @@ enableFetchMocks();
 
 const originalEnv = process.env;
 
-describe("Helper: fetchAllProducts", () => {
+describe("Service: fetchAllProducts", () => {
   beforeEach(() => {
     jest.clearAllMocks();
     process.env = {
@@ -45,7 +45,7 @@ describe("Helper: fetchAllProducts", () => {
   });
 });
 
-describe("Helper: fetchProductByGtin", () => {
+describe("Service: fetchProductByGtin", () => {
   beforeEach(() => {
     jest.clearAllMocks();
     process.env = {
