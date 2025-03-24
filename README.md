@@ -76,3 +76,7 @@ The `/products` endpoint accepts `GET` requests and will return the first page o
 #### `/products/[gtin]`
 
 The `/products/[gtin]` endpoint accepts `GET` requests and will return a product matching the GTIN (e.g. `/products/8005610625720`). If no product is found, the API will respond with a `404` status.
+
+## Unit and integration tests
+
+To run the tests, use: `npm run test`

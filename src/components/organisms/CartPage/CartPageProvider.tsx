@@ -5,14 +5,14 @@ import { Loading } from "../../atoms";
 import { ProductItem } from "@/types";
 
 const CartPageProvider: FC = () => {
-  const { items, updateItemQuantity, cartTotal } = useCart();
+  const { items, updateItemQuantity, cartTotal, isEmpty } = useCart();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (items && cartTotal) {
+    if ((items && cartTotal) || isEmpty) {
       setLoading(false);
     }
-  }, [items, cartTotal]);
+  }, [items, cartTotal, isEmpty]);
 
   const handleUpdateCart = (item: ProductItem, newQuantity: number) => {
     updateItemQuantity(item.id, newQuantity);

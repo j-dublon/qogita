@@ -23,12 +23,14 @@ const AllProductsPage: FC<AllProductsPageProps> = ({
       ) : (
         <div className="mb-8">
           <ProductsList products={products} />
-          <ResponsivePaginationComponent
-            current={currentPage}
-            total={totalPages}
-            onPageChange={(page) => fetchData(page)}
-            aria-label="Pagination controls for all products page"
-          />
+          <div className="max-w-px-300">
+            <ResponsivePaginationComponent
+              current={currentPage}
+              total={totalPages}
+              onPageChange={(page) => fetchData(page)}
+              aria-label="Pagination controls for all products page"
+            />
+          </div>
         </div>
       )}
     </Layout>

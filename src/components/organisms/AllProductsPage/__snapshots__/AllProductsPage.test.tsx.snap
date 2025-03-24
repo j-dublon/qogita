@@ -51,8 +51,12 @@ exports[`Component: AllProductsPage SHOULD match snapshot 1`] = `
           <div>
             Products List
           </div>
-          <div>
-            Pagination
+          <div
+            class="max-w-px-300"
+          >
+            <div>
+              Pagination
+            </div>
           </div>
         </div>
       </div>
@@ -105,8 +109,12 @@ exports[`Component: AllProductsPage SHOULD match snapshot 1`] = `
         <div>
           Products List
         </div>
-        <div>
-          Pagination
+        <div
+          class="max-w-px-300"
+        >
+          <div>
+            Pagination
+          </div>
         </div>
       </div>
     </div>

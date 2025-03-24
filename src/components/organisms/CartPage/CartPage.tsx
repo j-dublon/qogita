@@ -17,7 +17,9 @@ const CartPage: FC<CartPageProps> = ({
         key={item.id}
       />
     ))}
-    <h1 className="text-3xl font-semibold text-center my-6">{`CART TOTAL: EUR ${cartTotal}`}</h1>
+    <h1 className="text-3xl font-semibold text-center my-6">{`CART TOTAL: EUR ${cartTotal?.toFixed(
+      2
+    )}`}</h1>
   </Layout>
 );
 

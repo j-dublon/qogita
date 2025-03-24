@@ -54,7 +54,7 @@ exports[`Component: CartPage SHOULD match snapshot 1`] = `
         <h1
           class="text-3xl font-semibold text-center my-6"
         >
-          CART TOTAL: EUR 356
+          CART TOTAL: EUR 356.00
         </h1>
       </div>
     </div>
@@ -109,7 +109,7 @@ exports[`Component: CartPage SHOULD match snapshot 1`] = `
       <h1
         class="text-3xl font-semibold text-center my-6"
       >
-        CART TOTAL: EUR 356
+        CART TOTAL: EUR 356.00
       </h1>
     </div>
   </div>,
