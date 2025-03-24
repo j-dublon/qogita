@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Layout from "../../Layout/index";
 import { CartPageProps, ProductItem } from "@/types";
-import CartPageItem from "../../molecules/CartPageItem/CartPageItem";
+import { CartPageItem } from "../../molecules";
 
 const CartPage: FC<CartPageProps> = ({
   items,
