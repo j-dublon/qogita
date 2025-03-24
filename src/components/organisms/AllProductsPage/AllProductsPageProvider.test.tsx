@@ -40,14 +40,14 @@ describe("Component: AllProductsPageProvider", () => {
     expect(component).toMatchSnapshot();
   });
 
-  it("SHOULD render the AllProductsPageProvider component WHEN props are provided", () => {
+  it("SHOULD render the AllProductsPage component WHEN props are provided", () => {
     const { getByText } = render(
       <AllProductsPageProvider {...mockProviderProps} />
     );
     expect(getByText("Products Page"));
   });
 
-  it("SHOULD call fetchAllProducts WHEN fetchData is called by AllProductsPageProvider component", () => {
+  it("SHOULD call fetchAllProducts WHEN fetchData is called by AllProductsPage component", () => {
     const { getByText } = render(
       <AllProductsPageProvider {...mockProviderProps} />
     );
